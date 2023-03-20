@@ -1,0 +1,10 @@
+.header {
+  padding: 48px 0;
+  background-color: $white;
+  border-bottom: 1px solid $grey-1;
+
+  .v-container {
+    max-width: 1175px;
+    padding: 0 24px;
+  }
+}

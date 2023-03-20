@@ -1,0 +1,36 @@
+@mixin text-style($font-size, $font-weight, $line-height, $color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin text-link() {
+  @include text-style(16px, 400, 18px, $black-1);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin heading-text() {
+  @include text-style(24px, 700, 34px, $black-1);
+}
+
+@mixin sub-heading-text() {
+  @include text-style(18px, 700, 20px, $secondary);
+  text-transform: uppercase;
+}
+
+@mixin sub-title-text() {
+  @include text-style(16px, 400, 28px, $secondary);
+}
+
+@mixin flex-box($justify-content: flex-start, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin icon-color() {
+  color: $primary;
+  text-decoration: none;
+}

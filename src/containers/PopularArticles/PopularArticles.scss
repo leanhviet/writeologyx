@@ -1,0 +1,46 @@
+.popular-articles {
+  &__title {
+    @include heading-text();
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    @include flex-box(center, flex-start);
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  &__item {
+    @include flex-box();
+    gap: 20px;
+    cursor: pointer;
+
+    &-image {
+      flex-shrink: 0;
+      width: 132px;
+      height: 132px;
+      border-radius: 12px;
+      overflow: hidden;
+
+      img {
+        width: 132px;
+        height: 132px;
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &-title {
+      @include text-style(18px, 700, 28px, $primary);
+    }
+
+    &:hover {
+      .popular-articles__item-image {
+        img {
+          opacity: 0.75;
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+}

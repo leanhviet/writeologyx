@@ -1,0 +1,40 @@
+.nav-child {
+  @include flex-box(center, flex-start);
+  gap: 30px;
+  width: 460px;
+
+  &__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    &-title {
+      @include text-style(18px, 700, 20px, $primary);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    &-list {
+      @include flex-box(center, flex-start);
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &-link {
+      @include text-style(16px, 400, 20px, $secondary);
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    &-url {
+      color: $primary;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-bottom: 4px;
+      border-bottom: 2px solid $primary;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.the-articles {
+  padding-top: 50px;
+  padding-bottom: 170px;
+
+  &__row {
+    &__col {
+      &.articles-right {
+        padding-right: 20px !important;
+      }
+    }
+  }
+}

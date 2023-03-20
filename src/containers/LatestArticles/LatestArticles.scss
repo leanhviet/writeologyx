@@ -1,0 +1,11 @@
+.latest-articles {
+  &__title {
+    @include heading-text();
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+}

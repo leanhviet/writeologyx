@@ -1,0 +1,24 @@
+.search-article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__subtitle {
+    @include sub-title-text();
+  }
+
+  &__logo img {
+    position: static;
+    display: inline-block;
+    -webkit-transition: color 300ms ease, -webkit-transform 300ms ease;
+    transition: color 300ms ease, -webkit-transform 300ms ease;
+    transition: transform 300ms ease, color 300ms ease;
+    transition: transform 300ms ease, color 300ms ease, -webkit-transform 300ms ease;
+    
+    &:hover {
+      -webkit-transform: scale(0.94);
+      -ms-transform: scale(0.94);
+      transform: scale(0.94);
+    }
+  }
+}
