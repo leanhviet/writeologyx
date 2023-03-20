@@ -61,5 +61,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-  @import './styles.scss';
+@import './styles.scss';
 </style>

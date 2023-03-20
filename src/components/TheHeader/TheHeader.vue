@@ -12,7 +12,7 @@ import { computed, defineComponent } from 'vue';
 import { IMG_URL } from '@/configs/constants';
 import HeaderTop from './HeaderTop/HeaderTop.vue';
 import HeaderNav from './HeaderNav/HeaderNav.vue';
-import iconsSocial from '@/mocks/icons-social'
+import iconsSocial from '@/mocks/icons-social';
 
 type IconSocial = {
   id: string;
@@ -32,5 +32,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-  @import './styles.scss';
+@import './styles.scss';
 </style>

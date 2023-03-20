@@ -52,5 +52,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-  @import './HeaderSetting.scss';
+@import './HeaderSetting.scss';
 </style>

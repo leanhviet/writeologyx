@@ -37,5 +37,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-  @import './RecommendArticleImage.scss';
+@import './RecommendArticleImage.scss';
 </style>

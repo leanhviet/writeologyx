@@ -32,7 +32,7 @@
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
 import HeaderNavChild from './HeaderNavChild.vue';
-import headerNavs from '@/mocks/header-navs'
+import headerNavs from '@/mocks/header-navs';
 
 type RouterItem = {
   id: string;
@@ -54,5 +54,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-  @import './HeaderNav.scss';
+@import './HeaderNav.scss';
 </style>

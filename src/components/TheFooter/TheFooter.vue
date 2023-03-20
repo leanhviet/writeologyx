@@ -62,7 +62,6 @@ export default defineComponent({
         target: 'https://www.youtube.com/',
       },
     ];
-    console.log({newIcons})
     const icons = computed<IconSocial[]>(() => newIcons);
 
     return { icons };
