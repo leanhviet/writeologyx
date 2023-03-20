@@ -1,0 +1,53 @@
+.search-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(19, 19, 19, 0.12);
+  z-index: 999;
+
+  &__wrapper {
+    position: relative;
+    top: 40%;
+    left: 40%;
+    width: 450px;
+    border-color: $grey-1;
+    border-radius: 12px;
+    background-color: $white;
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 6%);
+    padding: 56px 44px;
+
+    &-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    &-title {
+      @include heading-text();
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    &-input {
+      @include text-style(16px, 400, 18px, $secondary);
+      min-height: 54px;
+    }
+
+    &-button {
+      min-height: 56px;
+      padding: 18px 28px;
+      border-radius: 8px;
+    }
+  }
+}
+
+::v-deep {
+  .v-btn__content {
+    @include text-style(16px, 700, 20px, $white);
+    text-transform: capitalize;
+  }
+}

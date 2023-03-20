@@ -1,0 +1,79 @@
+.header {
+  &__top {
+    @include flex-box(space-between);
+    margin-bottom: 24px;
+
+    &-setting {
+      @include flex-box();
+      gap: 14px;
+    }
+
+    &-cart {
+      @include text-style(16px, 700, 28px, $primary);
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &-account {
+      @include flex-box();
+      position: relative;
+      gap: 4px;
+      cursor: pointer;
+
+      &-list {
+        @include flex-box(center, flex-start);
+        gap: 18px;
+        flex-direction: column;
+        position: absolute;
+        top: 25px;
+        padding: 0 32px;
+        height: 0;
+        border: 1px solid $grey-1;
+        border-radius: 20px;
+        background-color: $white;
+        box-shadow: 0 2px 12px 0 rgb(0 0 0 / 12%);
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &-item {
+        @include text-style(16px, 400, 20px, $secondary);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+
+      &-down {
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        .header__top-account-list {
+          height: auto;
+          padding: 28px 32px;
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .header__top-account-down {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+    &-search {
+      cursor: pointer;
+      margin-left: 15px;
+
+      :hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

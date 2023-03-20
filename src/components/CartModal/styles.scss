@@ -1,0 +1,53 @@
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000cc;
+  z-index: 999;
+
+  &__wrapper {
+    position: relative;
+    top: 40%;
+    left: 40%;
+    width: 450px;
+    border-color: $grey-1;
+    border-radius: 12px;
+    background-color: $white;
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 6%);
+
+    &-header {
+      @include flex-box(space-between);
+      padding: 16px 24px;
+      border-bottom: 1px solid $grey-1;
+    }
+
+    &-title {
+      @include heading-text();
+    }
+
+    &-button {
+      min-height: 56px;
+      margin-top: 16px;
+      padding: 18px 28px;
+      border-radius: 8px;
+    }
+
+    &-empty {
+      @include flex-box(center);
+      flex-direction: column;
+      padding: 100px 24px;
+    }
+  }
+}
+
+.cart-modal ::v-deep {
+  .v-btn__content {
+    @include text-style(16px, 700, 20px, $white);
+    text-transform: capitalize;
+  }
+}
+
