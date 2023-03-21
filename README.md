@@ -11,7 +11,7 @@
 - Good project structure.
 - Good format and naming convention.
 - It will be a good component design (container, smart components, dump components).
-- Using FrontEnd (VueJS).
+- Using a frontend framework (VueJS).
 ## Technologies
 
 - VueJS.
