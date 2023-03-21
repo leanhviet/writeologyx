@@ -58,6 +58,8 @@
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
+
+// Mock data
 import SubscribeArticleData from '@/mocks/subscribe-premium';
 
 type ArticleSubscribe = {

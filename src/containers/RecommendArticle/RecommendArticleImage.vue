@@ -2,7 +2,7 @@
   <a class="recommend-article__link" href="">
     <div class="recommend-article__image">
       <div class="bg-overlay"></div>
-      <img :src="IMG_RECOMMEND" alt="image-recommend" />
+      <img src="/src/assets/images/recommend.jpeg" alt="image-recommend" />
       <div class="recommend-article__des">
         <div class="recommend-article__des-tip">Tips</div>
         <div class="recommend-article__des-title">
@@ -10,7 +10,7 @@
         </div>
         <div class="recommend-article__des-info">
           <div class="recommend-article__des-author">
-            <img :src="AUTHOR_IMG" alt="author" />
+            <img src="/src/assets/images/author.jpeg" alt="author" />
             John Carter
           </div>
           <div class="recommend-article__des-time">
@@ -25,14 +25,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IMG_RECOMMEND, AUTHOR_IMG } from '@/configs/constants';
 
 export default defineComponent({
   name: 'RecommendArticleImage',
   components: {},
-  setup() {
-    return { IMG_RECOMMEND, AUTHOR_IMG };
-  },
+  setup() {},
 });
 </script>
 

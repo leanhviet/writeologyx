@@ -21,6 +21,8 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+
+// Components
 import SearchModal from '@/components/SearchModal/SearchModal.vue';
 import CartModal from '@/components/CartModal/CartModal.vue';
 

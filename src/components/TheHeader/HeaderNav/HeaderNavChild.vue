@@ -24,6 +24,8 @@
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
+
+// Mock data
 import headerNavChild from '@/mocks/header-nav-child';
 
 type RouterItem = {

@@ -18,6 +18,8 @@
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
+
+// Mock data
 import PopularArticlesData from '@/mocks/popular-articles';
 
 type PopularArticle = {

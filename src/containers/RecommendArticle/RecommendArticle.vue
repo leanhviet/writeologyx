@@ -32,7 +32,11 @@
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
+
+// Components
 import RecommendArticleImage from './RecommendArticleImage.vue';
+
+// Mock data
 import RecommendArticleData from '@/mocks/recommend-article';
 
 type ArticleRelation = {

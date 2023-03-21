@@ -1,22 +1,22 @@
 export default [
   {
     id: '1',
-    icon: 'fb.svg',
+    icon: 'icons/fb.svg',
     target: 'https://www.facebook.com/',
   },
   {
     id: '2',
-    icon: 'twitter.svg',
+    icon: 'icons/twitter.svg',
     target: 'https://twitter.com/?lang=vi',
   },
   {
     id: '3',
-    icon: 'ins.svg',
+    icon: 'icons/ins.svg',
     target: 'https://www.instagram.com/',
   },
   {
     id: '4',
-    icon: 'linkedin.svg',
+    icon: 'icons/linkedin.svg',
     target: 'https://www.linkedin.com/',
   },
 ];

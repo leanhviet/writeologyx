@@ -25,7 +25,7 @@
               :href="icon.target"
               target="_blank"
             >
-              <img :src="`/src/assets/icons/${icon.icon}`" height="18" />
+              <img :src="getImageUrl(icon.icon)" height="18" />
             </a>
           </div>
         </div>
@@ -43,7 +43,12 @@
 
 <script lang="ts">
 import { defineComponent, computed } from 'vue';
+
+// Mock data
 import iconsSocial from '@/mocks/icons-social';
+
+// Helpers
+import { getImageUrl } from '@/helpers/functions'
 
 type IconSocial = {
   id: string;
@@ -58,13 +63,12 @@ export default defineComponent({
       ...iconsSocial,
       {
         id: '5',
-        icon: 'youtube.svg',
+        icon: 'icons/youtube.svg',
         target: 'https://www.youtube.com/',
       },
     ];
     const icons = computed<IconSocial[]>(() => newIcons);
-
-    return { icons };
+    return { icons, getImageUrl };
   },
 });
 </script>

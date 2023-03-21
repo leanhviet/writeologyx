@@ -25,6 +25,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+
+// Components
 import CategoryArticles from '../CategoryArticles/CategoryArticles.vue';
 import LatestArticles from '../LatestArticles/LatestArticles.vue';
 import PopularArticles from '../PopularArticles/PopularArticles.vue';

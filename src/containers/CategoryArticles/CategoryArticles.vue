@@ -14,7 +14,7 @@
     </div>
     <div class="category-article__post">
       <div class="category-article__card">
-        <img :src="newPost.linkImagePost" cover />
+        <img src="/src/assets/images/article-01.jpeg" cover />
         <div class="category-article__card-content">
           <p class="sub-title mb-4">{{ newPost.category }}</p>
           <p class="title">{{ newPost.title }}</p>
@@ -27,6 +27,8 @@
 
 <script lang="ts">
 import { defineComponent, computed, ref } from 'vue';
+
+// Mock data
 import CategoryData from '@/mocks/categories';
 
 type Category = {
