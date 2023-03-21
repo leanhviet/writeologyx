@@ -13,7 +13,11 @@
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
+
+// Components
 import ArticleItem from './ArticleItem.vue';
+
+// Mock data
 import LatestArticlesData from '@/mocks/latest-articles';
 
 type LatestArticles = {

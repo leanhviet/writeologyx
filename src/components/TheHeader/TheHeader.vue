@@ -9,10 +9,16 @@
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
+
+// Configs
 import { IMG_URL } from '@/configs/constants';
+
+// Components
 import HeaderTop from './HeaderTop/HeaderTop.vue';
 import HeaderNav from './HeaderNav/HeaderNav.vue';
-import iconsSocial from '@/mocks/icons-social'
+
+// Mock data
+import iconsSocial from '@/mocks/icons-social';
 
 type IconSocial = {
   id: string;
@@ -32,5 +38,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-  @import './styles.scss';
+@import './styles.scss';
 </style>
